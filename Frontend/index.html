@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compiler Error Knowledge Base</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🔍 Compiler Error Knowledge Base</h1>
+      <p>Get instant solutions for your programming errors</p>
+    </header>
+
+    <main>
+      <!-- Search Section -->
+      <section id="search-section">
+        <h2>Find Solutions Instantly</h2>
+        <form id="error-query-form">
+          <textarea
+            id="error-input"
+            placeholder="Paste your compiler error or code here...&#10;Example: int x = 5"
+            required
+          ></textarea>
+          <button type="submit">Get Solution</button>
+        </form>
+
+        <!-- Feedback Message -->
+        <div id="feedback-message" class="hidden"></div>
+
+        <!-- Solution Output -->
+        <div class="result-box hidden">
+          <div id="solution-output"></div>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section id="history-section">
+        <h2>Query History (Knowledge Base)</h2>
+        <button id="load-history-btn">Load History</button>
+        <div id="history-list-container">
+          <ul id="history-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Compiler Error Knowledge Base System</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
